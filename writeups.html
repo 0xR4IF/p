@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" type="image/x-icon" href="favicon.ico"/>
+  <link rel="shortcut icon" href="favicon.ico"/>
+  <link rel="apple-touch-icon" href="Pics/gradient-abstract-logo.png"/>
+  <title>WriteUps</title>
+  <link rel="stylesheet" href="Styles-Write.css"/>
+  <style>
+    @media (max-width: 768px) {
+      body * {
+        display: none !important;
+      }
+      
+      body::before {
+        content: "💻 This website is built for desktops, so please only visit the website from a desktop computer";
+        display: block !important;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #000317;
+        color: #0fc6fa;
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 2rem;
+        z-index: 99999;
+        font-family: 'Inter', sans-serif;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        line-height: 1.6;
+        box-sizing: border-box;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="top-nav">
+    <div class="nav-left">
+      <span class="logo"></span>
+      <a href="index.html" class="home-btn active">
+        <img src="favicon.ico" alt="Home" class="home-icon"/>
+      </a>
+    </div>
+    <div class="nav-right">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+              <a href="writeups.html" class="active">Write-Ups</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <section class="writeup-intro">
+    <h1 class="writeup-title">
+      <button class="desc-toggle" id="descToggleBtn" aria-expanded="false" aria-controls="writeupsDesc" onclick="toggleDesc()">
+        <span class="chevron">&#9654;</span>
+      </button>
+      Writeups
+      <span class="by-user">by 0xR4IF</span>
+    </h1>
+    <div class="writeup-desc-collapsible" id="writeupsDesc" style="display:none;">
+      Step-by-step walkthroughs of CTF challenges, machines, and rooms from various platforms.<br>
+      Every writeup covers methodology, tools, and practical solutions - clear and beginner-friendly.
+    </div>
+  </section>
+
+  <section class="writeup-grid">
+    <div class="grid-wrapper">
+
+      <div class="ctf-box" onclick="redirectToMedium('https://medium.com/@0xR4IF/tryhackme-injectics-medium-write-up-a710af04b442')">
+        <div class="ctf-top">
+          <h3 class="ctf-name">TryHackMe - Injectics</h3>
+          <span class="difficulty medium">Medium</span>
+        </div>
+        <div class="ctf-body">
+          <p class="ctf-text">
+A web-focused box exploiting SQLi, SSTI, and RCE techniques through smart injection chaining and filter bypassing.</p>
+          <div class="ctf-tags">
+            <span class="tag">SQL-injection</span>
+            <span class="tag">Filter Bypass</span>
+            <span class="tag">RCE</span>
+          </div>
+        </div>
+        <div class="ctf-bottom">
+          <span class="read-more">Click to read →</span>
+        </div>
+      </div>
+
+      <div class="ctf-box" onclick="redirectToMedium('https://medium.com/@0xR4IF/tryhackme-include-medium-write-up-b7fd3cc78916')">
+        <div class="ctf-top">
+          <h3 class="ctf-name">TryHackMe - Include</h3>
+          <span class="difficulty medium">Medium</span>
+        </div>
+        <div class="ctf-body">
+          <p class="ctf-text">
+           A PHP box focusing on insecure object merging, SSRF, LFI, and Log Poisioning for privilege escalation and code access.          </p>
+          <div class="ctf-tags">
+            <span class="tag">Prototype Pollution</span>
+            <span class="tag">LFI</span>
+            <span class="tag">SSRF</span>
+          </div>
+        </div>
+        <div class="ctf-bottom">
+          <span class="read-more">Click to read →</span>
+        </div>
+      </div>
+
+
+      <div class="ctf-box" onclick="redirectToMedium('https://medium.com/@0xR4IF/tryhackme-whats-your-name-medium-write-up-f35011cc9428')">
+        <div class="ctf-top">
+          <h3 class="ctf-name">TryHackMe - Whats Your Name?</h3>
+          <span class="difficulty medium">Medium</span>
+        </div>
+        <div class="ctf-body">
+          <p class="ctf-text">
+            A social media box focusing on blind XSS, session hijacking, and fetch-based CSRF for privilege escalation and admin access.          </p>
+          <div class="ctf-tags">
+            <span class="tag">XSS</span>
+            <span class="tag">CSRF</span>
+            <span class="tag">Privilege Escalation</span>
+          </div>
+        </div>
+        <div class="ctf-bottom">
+          <span class="read-more">Click to read →</span>
+        </div>
+      </div>
+
+
+      <div class="ctf-box" onclick="redirectToMedium('https://medium.com/@0xR4IF/tryhackme-hammer-medium-write-up-332338470183')">
+        <div class="ctf-top">
+          <h3 class="ctf-name">TryHackMe - Hammer</h3>
+          <span class="difficulty medium">Medium</span>
+        </div>
+        <div class="ctf-body">
+          <p class="ctf-text">
+            This box is focused on a recovery code brute-forcing and JWT exploitation through kid header manipulation and payload tampering, leading to admin privileges and RCE.          </p>
+          <div class="ctf-tags">
+            <span class="tag">Brute Force</span>
+            <span class="tag">JWT</span>
+            <span class="tag">RCE</span>
+          </div>
+        </div>
+        <div class="ctf-bottom">
+          <span class="read-more">Click to read →</span>
+        </div>
+      </div>
+
+
+
+      <div class="ctf-box" onclick="redirectToMedium('https://medium.com/@0xR4IF/tryhackme-el-bandito-hard-write-up-8bb7b6ef3c24')">
+        <div class="ctf-top">
+          <h3 class="ctf-name">TryHackMe - El Bandito</h3>
+          <span class="difficulty hard">Hard</span>
+        </div>
+        <div class="ctf-body">
+          <p class="ctf-text">
+            The box is focused on SSRF > WebSocket tunneling via crafted 101 response, and an HTTP/2 to HTTP/1.1 desync attack, leading to request hijacking.          </p>
+          <div class="ctf-tags">
+            <span class="tag">WebSockets</span>
+            <span class="tag">HTTP Request Smuggling</span>
+            <span class="tag">HTTP/2 > HTTP/1.1</span>
+          </div>
+        </div>
+        <div class="ctf-bottom">
+          <span class="read-more">Click to read →</span>
+        </div>
+      </div>
+      <div class="ctf-box pending-box">
+        <div class="pending-box-content">
+          <span class="pending-label">Loading</span>
+          <span class="pending-dots-animated"><span>.</span><span>.</span><span>.</span></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function redirectToMedium(url) {
+      window.open(url, '_blank');
+    }
+  </script>
+  <script>
+function toggleDesc() {
+  const desc = document.getElementById('writeupsDesc');
+  const btn = document.getElementById('descToggleBtn');
+  const chevron = btn.querySelector('.chevron');
+  if (desc.style.display === 'none') {
+    desc.style.display = 'block';
+    btn.setAttribute('aria-expanded', 'true');
+    chevron.style.transform = 'rotate(90deg)';
+  } else {
+    desc.style.display = 'none';
+    btn.setAttribute('aria-expanded', 'false');
+    chevron.style.transform = 'rotate(0deg)';
+  }
+}
+</script>
+</body>
+</html>
